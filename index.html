@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <p id="demo" onclick="greet()">Hello Paragraph</p>
+    <script>
+      const name = "Ademide Adetokumbo";
+      const para = document.getElementById("demo");
+      console.log(para);
+      para.innerHTML = name;
+      para.style.color = "red";
+      para.style.fontSize = "50px";
+      //   para.style.display = "none";
+      const greet = function () {
+        alert("Good day my people");
+      };
+    </script>
+  </body>
+</html>
