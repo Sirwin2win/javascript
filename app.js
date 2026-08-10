@@ -1,67 +1,29 @@
-console.log("Hello World"); // sending to ouput streem <!-- HTML--> /* CSS*/
-const name = "Jonh Doe"; // string
-const age = 20; // integers(whole numbers), numbers, floot(2.4)
-const cars = ["Toyota", "Honda", "KIA"]; // array
-const names = {
-  name: "Peter Doe",
-  age: 23,
-  favColor: "red",
-  email: "peterdoe@gmail.com",
-}; // object
-const isMonday = true; // boolean
-const isSunday = false; //boolean
-// Single line comments
-/* 
-Multiple 
-line
- comments    
- */
-// Variables are containers for storing values
+// Variable is a container that stores values
+const name = "John Doe"; // string
+const godwin = name;
+console.log(godwin);
 console.log(name);
+const age = 21; // integer
 console.log(age);
-console.log(cars);
-console.log(names);
-// How To choose a variable name
+const arr = ["Toyota", "KIA", "Ford", "Honda"]; //DRY(Don't Repeat Yourself)
+console.log(arr);
 /*
-1. camel Case: e.g fistName, lastName
-2. Pascal Case: FirstName,LastName,FullName
-3. Snake Case: first_name,last_name,full_name
-4. Do not start a variable name with a number, special character etc
+Ways of choosing variable names 
+1. Camel case: e.g firstName, webClass, lastName
+2. Pascal Case e.g FirstName, WebClass, LastName
+3. Snake Case e.g first_name, web_class, last_name
+Note. Variables can store any value e.g string, integer,float,arrays,objects,boolean
+    Variable declaration
+  1. const. constant 
+  2. let. This allows us to update a variable after declaration is suitable for local scopes
+  3. var. This does what const and let are doing, but it is the old way of variable declaration
+    Variable Scope
+  1. local scope: This is where the variable is declared inside a block of code
+  2. global scope
 */
-// Data Types
-/*
-1. Integers(Numbers) e.g  4, 50,1000
-2. Strings(letters) e.g "hello", "email@example.com"
-3. float e.g 3.5, 10.0
-4. Arrays(a collection of things) e.g ["Uche",25,true,false]
-5. Objects(a collection in key/value pairs) e.g {name:"Mary Doe",age:15,weight:50}
-6. Boolean e.g true/false
-
-Variable Keywords 
-1. const ; used to declare constant variables (good for global scope)
-2. let; used to declare variables that we might overwright (good for local scope)
-3. var; older keyword and is used for all variable scopes
-Variable Scopes
-1. local
-2. global
-*/
-// Keywords; they are used to define action to be performed e.g let, const, true, false, var, function
-const firstName = "Godwin"; // global
-console.log(firstName);
-let a = 5;
-console.log((a += 3));
-var b = 10;
-console.log((b += 3));
-// function
 const greet = function () {
-  let today = "Wednesday"; // local
-  console.log("Good morning " + firstName + " today is," + today);
+  const name2 = "Olatunji";
+  console.log("Good day developer " + name2);
 };
 greet();
-
-// console.log(today);
-// conditional statement
-if (age >= 20) {
-  let name = "Uche";
-  console.log(name + " Is now an adult");
-}
+console.log(name);
