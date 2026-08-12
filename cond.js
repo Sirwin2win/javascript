@@ -110,6 +110,15 @@ switch (day) {
     console.log("Not applicable");
     break;
 }
-let month = new Date().getMonth();
+let month = new Date().getMonth(); // 0,1,2,3,4,5,6,7,8,9,10,11
 console.log(month);
-// FAQ
+// Assignment
+/*
+1. month switch
+2. yoruba greeting
+3. eligibility game. This game should only be played by users who are Nigerians and 18 years and above
+Hint: &&
+let age = 12
+let nationality = "Ghana"
+
+*/
