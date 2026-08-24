@@ -11,6 +11,16 @@ const greet = function(){
 1. function with paraneters
 2. higher order functions
 3. arrow functions
+      Classes of function 
+    1. function expression: Where the function is assigned to a variable e.g
+    const greet = function(){
+      return "Good morning"
+    }
+    2. function declaration: We do not assign to a variable name e.g
+    function greet(){
+      return "Good morning"
+    }
+      Note: That function declaration could be hoisted
 */
 // function dfinition
 const greet = function () {
@@ -49,6 +59,7 @@ const cube = function (r) {
 cube(2);
 cube(3);
 const trapez = function (a, b, h) {
+  // 1/2(a+b)h
   let result = 0.5 * (a + b) * h;
   console.log(result);
 };
@@ -86,5 +97,9 @@ console.log(y3);
 // What kind of value can be returned by a function
 /*
 A function can retuen any data type
-
 */
+console.log(sayHello());
+function sayHello() {
+  return "Hello World!";
+}
+// A function that can multiply any 2 numbers we use to call it i.e a function with 2 parameters
