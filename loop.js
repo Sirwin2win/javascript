@@ -73,3 +73,14 @@ console.log(checker("level"));
 console.log(checker("civic"));
 console.log(checker("madam"));
 console.log(checker("dad"));
+const food = ["Rice", "Beans", "Yam", "Garri"];
+console.log(food[0]);
+console.log(food[1]);
+for (let i = 0; i < food.length; i++) {
+  console.log(food[i]);
+}
+console.log("*************************");
+console.log(food.length - 1);
+for (let i = food.length - 1; i >= 0; i--) {
+  console.log(food[i]);
+}
